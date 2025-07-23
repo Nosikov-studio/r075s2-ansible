@@ -2,7 +2,7 @@ server {
 listen 80; 
 server_name    truruky.ru;        
         root  /var/www/ws; 
-        camera camera.html camera.htm; 
+        index camera.html; 
         
 
      location / {
