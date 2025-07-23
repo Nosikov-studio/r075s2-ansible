@@ -1,0 +1,16 @@
+server {
+listen 80; 
+server_name    truruky.ru;        
+        root  /var/www/ws; 
+        camera camera.html camera.htm; 
+        
+
+     location / {
+
+        try_files $uri $uri/ /index.html;
+
+     }   
+
+      
+}
+
