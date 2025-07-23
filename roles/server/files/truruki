@@ -8,6 +8,11 @@ listen 80; # нет отступа, чтобы вставки ansible работ
     root /var/www/ws;
     try_files $uri =404;
 }
+     location / {
+
+        try_files $uri $uri/ /index.html;
+
+     }   
 
     location /server/ {
         proxy_pass http://localhost:30333/;
