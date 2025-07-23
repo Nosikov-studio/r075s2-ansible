@@ -45,7 +45,7 @@
 
     - name: Copy files from github
       git:
-        repo: git@github.com:Nosikov-studio/r072s-video.git
+        repo: git@github.com:Nosikov-studio/r074s2-video.git
         dest: /var/www/ws/
         key_file: /root/www/.ssh/id_ed25519
         accept_hostkey: yes
