@@ -8,11 +8,7 @@ listen 80; # нет отступа, чтобы вставки ansible работ
     root /var/www/ws;
     try_files $uri =404;
 }
-     location / {
 
-        try_files $uri $uri/ /index.html;
-
-     }   
 
     location /server/ {
         proxy_pass http://localhost:30333/;
@@ -24,5 +20,11 @@ listen 80; # нет отступа, чтобы вставки ansible работ
 
         proxy_cache_bypass $http_upgrade;
     }
+
+         location / {
+
+        try_files $uri $uri/ /index.html;
+
+     }   
 }
 
